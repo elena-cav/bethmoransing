@@ -15,7 +15,7 @@ $darkGreen: #21836c;
 .parallax-content {
   width: 80%;
   margin: 0 auto;
-  padding-top: calc(100vh - 69.08px - 48px - 49px);
+  padding-top: calc(100vh - 69.08px - 88px - 49px);
   display: flex;
   justify-content: center;
 
@@ -23,7 +23,7 @@ $darkGreen: #21836c;
     text-transform: uppercase;
     background-color: $darkGreen;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 56px;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease-in-out;
 
@@ -31,12 +31,34 @@ $darkGreen: #21836c;
       background-color: $green;
     }
   }
-
-  @media screen and (min-width: 840px) {
-    // padding-top: 70vh;
-  }
 }
 
 .front-page-content {
   padding: 0 2rem;
+
+  .cards-container {
+    height: 15rem;
+    display: flex;
+    width: 100%;
+    column-gap: 0.5rem;
+
+    .card {
+      width: 33%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    i {
+      font-size: 3rem;
+      color: #191516;
+    }
+    .yellow {
+      background-color: #e1f0c4;
+    }
+    .green {
+      background-color: #cef9f2;
+    }
+  }
 }

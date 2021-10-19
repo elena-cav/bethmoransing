@@ -18,7 +18,7 @@
             <span class='logo'>
                 <h1><a class='logolink' href="<?php
                                                 echo site_url()
-                                                ?>">Beth Moran</a></h1>
+                                                ?>">Beth Moran <p>SINGING</p></a></h1>
             </span>
             <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
             <div class="site-header__menu group">

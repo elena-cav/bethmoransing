@@ -26,3 +26,23 @@ function bethsinging_files()
     // ));
 };
 add_action('wp_enqueue_scripts', 'bethsinging_files');
+function beth_moran_post_types()
+{
+
+    register_post_type('testimonial', array(
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+        'public' => true,
+        'rewrite' => array('slug' => 'testimonials'),
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'Testimonials',
+            'add_new_item' => 'Add new Testimonial',
+            'edit_item' => 'Edit Testimonial',
+            'all_items' => 'All Testimonials',
+            'singular_name' => 'Testimonial'
+        ),
+        'menu_icon' => 'dashicons-format-quote'
+    ));
+}
+add_action('init', 'beth_moran_post_types');

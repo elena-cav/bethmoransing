@@ -1,12 +1,7 @@
-// $purple: #a06cd5;
-// $lightBlue: #bde0fe;
-// $blue: #a2d2ff;
-// $darkPurple: #7a36bf;
-
 @import "base/baseline";
 @import "base/variables";
 
 @import "modules/header";
-@import "modules/_front-page";
+@import "modules/front-page";
 @import "modules/testimonials";
 @import "modules/footer";
