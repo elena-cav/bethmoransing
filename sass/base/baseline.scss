@@ -1,9 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   &.is--open {
     overflow: hidden;
   }
 }
-
 body {
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -35,32 +40,14 @@ input[type="reset"] {
 }
 a {
   text-decoration: inherit;
-  color: inherit;
+  color: initial;
 }
 
 a:hover {
   text-decoration: none;
+  color: initial;
 }
 
 li {
   list-style: none;
-}
-
-ul {
-  padding-inline-start: 0;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.flex-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-h2 {
-  font-family: "Satisfy", "cursive";
 }
