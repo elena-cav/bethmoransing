@@ -51,3 +51,22 @@ a:hover {
 li {
   list-style: none;
 }
+
+ul {
+  padding-inline-start: 0;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "Satisfy", "cursive";
+}
