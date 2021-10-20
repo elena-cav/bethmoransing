@@ -1,9 +1,15 @@
-<?php
-get_header()
-?>
-<?php
-echo do_shortcode('[startbooking flow="single-service" service="zxNDWJqBo" details="true"]')
-?>
-<?php
-get_footer()
-?>
+<div class="flex-wrapper">
+
+    <?php
+    get_header()
+    ?>
+    <div class="container">
+
+        <?php
+        the_title();
+        the_content()
+        ?></div>
+    <?php
+    get_footer()
+    ?>
+</div>

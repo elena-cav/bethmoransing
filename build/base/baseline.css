@@ -40,7 +40,7 @@ input[type=reset] {
 
 a {
   text-decoration: inherit;
-  color: initial;
+  color: inherit;
 }
 
 a:hover {

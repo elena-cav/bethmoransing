@@ -1,10 +1,8 @@
-$lightPink: #ffd6e5;
-$pink: #ffafcc;
-$green: #3bceac;
-$darkGreen: #21836c;
-
 .parallax {
-  background-image: url("http://bethmoran.localhost/wp-content/uploads/2021/10/13a2e5_d8294fbfeece480283f5ce34b1281306_mv2_d_7952_5304_s_4_2.webp");
+  background: #eb01a5;
+
+  background-image: url("http://bethmoran.localhost/wp-content/uploads/2021/10/13a2e5_d8294fbfeece480283f5ce34b1281306_mv2_d_7952_5304_s_4_2.webp"),
+    linear-gradient(#a5a5a5, #ffffff);
   height: 100%;
   background-attachment: fixed;
   background-position: top;
@@ -23,9 +21,9 @@ $darkGreen: #21836c;
     text-transform: uppercase;
     background-color: $darkGreen;
     color: white;
-    margin-bottom: 56px;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease-in-out;
+    margin-bottom: 56px;
 
     &:hover {
       background-color: $green;
@@ -49,16 +47,20 @@ $darkGreen: #21836c;
       align-items: center;
       justify-content: center;
       text-align: center;
+      img {
+        height: 5rem;
+      }
     }
     i {
       font-size: 3rem;
       color: #191516;
     }
+
     .yellow {
-      background-color: #e1f0c4;
+      background-color: #fcf6bd;
     }
     .green {
-      background-color: #cef9f2;
+      background-color: #ffe0b5;
     }
   }
 }

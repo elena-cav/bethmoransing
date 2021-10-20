@@ -2,6 +2,44 @@ $duration: 0.2s;
 $distance: 15px;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 .site-header {
+  a:not(.logolink) {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $green;
+    }
+    &:before {
+      opacity: 0;
+      transform: translateY(-$distance);
+      transition: transform 0s $easeOutBack, opacity 0s;
+    }
+    &:after {
+      opacity: 0;
+      transform: translateY(7.5px);
+      transition: transform $duration $easeOutBack, opacity $duration;
+    }
+    &:hover,
+    &:focus {
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:before {
+        transition: transform $duration $easeOutBack, opacity $duration;
+      }
+      &:after {
+        transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+      }
+    }
+  }
   .container {
     background-color: $lightPink;
     display: flex;
@@ -64,7 +102,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     right: 0;
     top: -20px;
     opacity: 0;
-    transform: translateY(-20%);
+    transform: translateX(-20%);
     transition: opacity 0.2s ease-out, visibility 0.2s ease-out,
       transform 0.3s ease-out;
     @media (min-width: 960px) {
@@ -86,7 +124,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 100;
   }
   ul {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     margin-left: 2rem;
     @media (min-width: 960px) {
       margin: 0;
@@ -103,48 +141,24 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       margin: 10px 0;
 
       @media (min-width: 960px) {
-        display: inline;
         margin: 0 10px;
         font-size: 13px;
       }
     }
+    @media (min-width: 960px) {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
   }
-  a:not(.logolink) {
-    position: relative;
+}
 
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: $green;
-    }
-    &:before {
-      opacity: 0;
-      transform: translateY(-$distance);
-      transition: transform 0s $easeOutBack, opacity 0s;
-    }
-    &:after {
-      opacity: 0;
-      transform: translateY(7.5px);
-      transition: transform $duration $easeOutBack, opacity $duration;
-    }
-    &:hover,
-    &:focus {
-      &:before,
-      &:after {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      &:before {
-        transition: transform $duration $easeOutBack, opacity $duration;
-      }
-      &:after {
-        transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-      }
-    }
-  }
+.site-header__menu--active {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+  background: $lightPink;
+  height: calc(100vh + 100px);
+  z-index: 100;
 }

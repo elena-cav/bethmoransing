@@ -41,7 +41,7 @@ input[type=reset] {
 
 a {
   text-decoration: inherit;
-  color: initial;
+  color: inherit;
 }
 
 a:hover {
@@ -72,6 +72,38 @@ h2 {
   font-family: "Satisfy", "cursive";
 }
 
+.site-header a:not(.logolink) {
+  position: relative;
+}
+.site-header a:not(.logolink):before, .site-header a:not(.logolink):after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3bceac;
+}
+.site-header a:not(.logolink):before {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+.site-header a:not(.logolink):after {
+  opacity: 0;
+  transform: translateY(7.5px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+.site-header a:not(.logolink):hover:before, .site-header a:not(.logolink):hover:after, .site-header a:not(.logolink):focus:before, .site-header a:not(.logolink):focus:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.site-header a:not(.logolink):hover:before, .site-header a:not(.logolink):focus:before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+.site-header a:not(.logolink):hover:after, .site-header a:not(.logolink):focus:after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+}
 .site-header .container {
   background-color: #ffd6e5;
   display: flex;
@@ -130,7 +162,7 @@ h2 {
   right: 0;
   top: -20px;
   opacity: 0;
-  transform: translateY(-20%);
+  transform: translateX(-20%);
   transition: opacity 0.2s ease-out, visibility 0.2s ease-out, transform 0.3s ease-out;
 }
 @media (min-width: 960px) {
@@ -153,7 +185,7 @@ h2 {
   z-index: 100;
 }
 .site-header ul {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   margin-left: 2rem;
 }
 @media (min-width: 960px) {
@@ -174,46 +206,31 @@ h2 {
 }
 @media (min-width: 960px) {
   .site-header ul li {
-    display: inline;
     margin: 0 10px;
     font-size: 13px;
   }
 }
-.site-header a:not(.logolink) {
-  position: relative;
+@media (min-width: 960px) {
+  .site-header ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
-.site-header a:not(.logolink):before, .site-header a:not(.logolink):after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #3bceac;
-}
-.site-header a:not(.logolink):before {
-  opacity: 0;
-  transform: translateY(-15px);
-  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
-}
-.site-header a:not(.logolink):after {
-  opacity: 0;
-  transform: translateY(7.5px);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-}
-.site-header a:not(.logolink):hover:before, .site-header a:not(.logolink):hover:after, .site-header a:not(.logolink):focus:before, .site-header a:not(.logolink):focus:after {
+
+.site-header__menu--active {
   opacity: 1;
-  transform: translateY(0);
-}
-.site-header a:not(.logolink):hover:before, .site-header a:not(.logolink):focus:before {
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
-}
-.site-header a:not(.logolink):hover:after, .site-header a:not(.logolink):focus:after {
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transform: translateX(0);
+  visibility: visible;
+  background: #ffd6e5;
+  height: calc(100vh + 100px);
+  z-index: 100;
 }
 
 .parallax {
-  background-image: url("http://bethmoran.localhost/wp-content/uploads/2021/10/13a2e5_d8294fbfeece480283f5ce34b1281306_mv2_d_7952_5304_s_4_2.webp");
+  background: #eb01a5;
+  background-image: url("http://bethmoran.localhost/wp-content/uploads/2021/10/13a2e5_d8294fbfeece480283f5ce34b1281306_mv2_d_7952_5304_s_4_2.webp"), linear-gradient(#a5a5a5, #ffffff);
   height: 100%;
   background-attachment: fixed;
   background-position: top;
@@ -232,9 +249,9 @@ h2 {
   text-transform: uppercase;
   background-color: #21836c;
   color: white;
-  margin-bottom: 56px;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease-in-out;
+  margin-bottom: 56px;
 }
 .parallax-content button:hover {
   background-color: #3bceac;
@@ -257,15 +274,18 @@ h2 {
   justify-content: center;
   text-align: center;
 }
+.front-page-content .cards-container .card img {
+  height: 5rem;
+}
 .front-page-content .cards-container i {
   font-size: 3rem;
   color: #191516;
 }
 .front-page-content .cards-container .yellow {
-  background-color: #e1f0c4;
+  background-color: #fcf6bd;
 }
 .front-page-content .cards-container .green {
-  background-color: #cef9f2;
+  background-color: #ffe0b5;
 }
 
 .testimonials {

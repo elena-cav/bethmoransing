@@ -1,50 +1,50 @@
-<?php
-get_header();
+<div class="flex-wrapper">
 
-?>
-<div class="parallax">
+    <?php
+    get_header();
 
-    <div class="parallax-content">
-        <button>Book a singing lesson</button>
+    ?>
+    <div class="front-page-container">
+
+        <div class="parallax">
+
+            <div class="parallax-content">
+                <button><a class=buttonlink href="<?php
+                                                    echo site_url('/book-now')
+                                                    ?>">Book a class</a></button>
+            </div>
+
+        </div>
+
+
+        <div class="front-page-content">
+            <p><?php
+                $homePage = get_post(13);
+
+                ?></p>
+            <h2>Hi, I'm Beth</h2>
+            <p><?php
+                echo $homePage->post_content;
+                ?></p>
+            </h1>
+            <div class="cards-container">
+                <div class="card yellow">
+                    <img src="http://bethmoran.localhost/wp-content/uploads/2021/10/8541685_couch_sofa_furniture_icon.svg
+" alt="">
+                    <p>Find out about Couch Opera</p>
+                </div>
+                <div class="card green">
+                    <img src="http://bethmoran.localhost/wp-content/uploads/2021/10/7549098_user_interface_info_information_detail_icon.svg" alt="">
+                    <p>Learn about how I like to teach</p>
+                </div>
+                <div class="card yellow">
+                    <i class="fa fa-calendar"></i>
+                    <p>Book an online class</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-</div>
-
-
-<p><?php
-    $homePage = get_post(13);
-    echo $homePage->post_content;
-    ?></p>
-<h1>Beth is a great singer "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-</h1>
-
-<div class="front-page-content">
-    <p><?php
-        $homePage = get_post(13);
-
-        ?></p>
-    <h2>Hi, I'm Beth</h2>
-    <p><?php
-        echo $homePage->post_content;
-        ?></p>
-    </h1>
-    <div class="cards-container">
-        <div class="card yellow">
-            <i class="fa fa-music"></i>
-            <p>Something about music</p>
-        </div>
-        <div class="card green">
-            <i class="fa fa-play-circle"></i>
-            <p>Watch me perform</p>
-        </div>
-        <div class="card yellow">
-            <i class="fa fa-leanpub"></i>
-            <p>Learn about how I like to teach</p>
-        </div>
-    </div>
-</div>
-</div>
-<?php
-get_footer();
-?>
+    <?php
+    get_footer();
+    ?>
 </div>

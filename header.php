@@ -17,13 +17,18 @@
                                                 ?>">Beth Moran <p>SINGING</p></a></h1>
             </span>
             <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
-            <div class="site-header__menu group">
+            <div class="site-header__menu">
                 <nav class="main-navigation">
                     <ul>
                         <li>
                             <a href="<?php
+                                        echo site_url('/book-now')
+                                        ?>"> Book a lesson</a>
+                        </li>
+                        <li>
+                            <a href="<?php
                                         echo site_url('/my-teaching-approach')
-                                        ?>"> My Teaching approach</a>
+                                        ?>">My Teaching approach</a>
 
                         </li>
                         <li>
@@ -37,8 +42,6 @@
                                         ?>">Testimonials</a>
                         </li>
 
-
-
                     </ul>
                 </nav>
 
@@ -46,4 +49,3 @@
         </div>
     </header>
 </body>
-<div id="page-anim-preloader"></div>
