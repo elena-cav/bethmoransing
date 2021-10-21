@@ -15,7 +15,7 @@ add_action('after_setup_theme', 'bethyoga_features');
 function bethsinging_files()
 {
     wp_enqueue_script("main-bethmoran-js", get_theme_file_uri('/build/index.js'), array('jquery'), 1.0, true);
-    wp_enqueue_style("custom-google-fonts", 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i|Montserrat:100,300,400,400i,700,700i');
+    wp_enqueue_style("custom-google-fonts", 'https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,700,700i|Nunito:100,300,400,400i,700,700i');
     wp_enqueue_style("font-awesome", '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"');
     wp_enqueue_style("bethyoga_main_styles", get_theme_file_uri('/build/style.css'));
     wp_enqueue_style("bethyoga_extra_styles", get_theme_file_uri('/build/index.css'));

@@ -11,7 +11,7 @@ html.is--open {
 
 body {
   color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #faf9f8;
   position: relative;
   animation: fadeInAnimation ease 1s;
@@ -68,8 +68,8 @@ ul {
   justify-content: space-between;
 }
 
-h2 {
-  font-family: "Satisfy", "cursive";
+h1 {
+  font-family: "Lora", "cursive";
 }
 
 .site-header a:not(.logolink) {
@@ -229,8 +229,7 @@ h2 {
 }
 
 .parallax {
-  background: #eb01a5;
-  background-image: url("http://bethmoran.localhost/wp-content/uploads/2021/10/13a2e5_d8294fbfeece480283f5ce34b1281306_mv2_d_7952_5304_s_4_2.webp"), linear-gradient(#a5a5a5, #ffffff);
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.5) 90%), url("http://bethmoran.localhost/wp-content/uploads/2021/10/13a2e5_d8294fbfeece480283f5ce34b1281306_mv2_d_7952_5304_s_4_2.webp");
   height: 100%;
   background-attachment: fixed;
   background-position: top;
