@@ -58,7 +58,17 @@ ul {
 }
 
 .container {
-  padding: 0 16px;
+  padding: 2rem 1.5rem;
+}
+@media (min-width: 650px) {
+  .container {
+    padding: 2rem 2rem;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    padding: 2rem 5rem;
+  }
 }
 
 .flex-wrapper {
@@ -70,6 +80,55 @@ ul {
 
 h1 {
   font-family: "Lora", "cursive";
+}
+
+.banner {
+  background-image: url("http://bethmoran.localhost/wp-content/uploads/2021/10/b872efdd6f255216a3c8fa1a93db43f8.jpg");
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 7rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  row-gap: 0.5rem;
+  top: 68.8px;
+}
+.banner h1 {
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+@media (min-width: 530px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
+.banner p {
+  font-family: "Lora", "cursive";
+  position: relative;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+@media (min-width: 530px) {
+  .banner p {
+    font-size: 1.2rem;
+  }
+}
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
 }
 
 .visually-hidden {
@@ -102,7 +161,7 @@ h1 {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #3bceac;
+  background-color: #17b5af;
 }
 .site-header a:not(.logolink):before {
   opacity: 0;
@@ -125,7 +184,7 @@ h1 {
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
 }
 .site-header .container {
-  background-color: #ffd6e5;
+  background-color: #f9d2c7;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -136,7 +195,7 @@ h1 {
 }
 .site-header .container .logo h1 {
   margin: 0;
-  color: #21836c;
+  color: #107975;
 }
 .site-header .container .logo h1 p {
   font-size: 13px;
@@ -149,7 +208,7 @@ h1 {
 }
 .site-header .site-header__menu-trigger {
   cursor: pointer;
-  color: #21836c;
+  color: #107975;
   font-size: 1.2rem;
   z-index: 101;
   position: relative;
@@ -157,7 +216,7 @@ h1 {
 .site-header .site-header__menu-trigger.fa-times::after {
   content: "";
   z-index: -1;
-  background-color: #ffafcc;
+  background-color: #f6b5a3;
   position: absolute;
   width: 400%;
   height: calc(100vh + 100px);
@@ -200,7 +259,7 @@ h1 {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
-  background: #ffd6e5;
+  background: #f9d2c7;
   height: calc(100vh + 100px);
   z-index: 100;
 }
@@ -214,7 +273,7 @@ h1 {
   }
 }
 .site-header ul li {
-  color: #21836c;
+  color: #107975;
   text-transform: uppercase;
   list-style: none;
   font-size: 15px;
@@ -222,7 +281,7 @@ h1 {
   margin: 10px 0;
 }
 .site-header ul li a {
-  color: #21836c;
+  color: #107975;
 }
 @media (min-width: 960px) {
   .site-header ul li {
@@ -243,7 +302,7 @@ h1 {
   opacity: 1;
   transform: translateX(0);
   visibility: visible;
-  background: #ffd6e5;
+  background: #f9d2c7;
   height: calc(100vh + 100px);
   z-index: 100;
 }
@@ -266,14 +325,14 @@ h1 {
 }
 .parallax-content button {
   text-transform: uppercase;
-  background-color: #21836c;
+  background-color: #107975;
   color: white;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease-in-out;
   margin-bottom: 56px;
 }
 .parallax-content button:hover {
-  background-color: #3bceac;
+  background-color: #17b5af;
 }
 
 .front-page-content .introduction {
@@ -354,10 +413,10 @@ h1 {
   color: #191516;
 }
 .front-page-content .cards-container .yellow button {
-  border: 2px solid #ffafcc;
+  border: 2px solid #f6b5a3;
 }
 .front-page-content .cards-container .yellow button:hover {
-  background-color: #ffafcc;
+  background-color: #f6b5a3;
 }
 .front-page-content .cards-container .green {
   background-color: #ffe0b5;
@@ -368,14 +427,15 @@ h1 {
   color: black;
 }
 .front-page-content .cards-container .green button {
-  border: 2px solid #3bceac;
+  border: 2px solid #17b5af;
 }
 .front-page-content .cards-container .green button:hover {
-  background-color: #3bceac;
+  background-color: #17b5af;
 }
 
 .testimonials {
   line-height: 1.1rem;
+  margin-top: 112px;
 }
 .testimonials .banner {
   text-align: center;
@@ -408,7 +468,7 @@ h1 {
   margin-top: 0.2rem;
 }
 .testimonials .testimonial-quotes {
-  border-top: 1px dotted #3bceac;
+  border-top: 1px dotted #17b5af;
   font-size: 0.75rem;
   display: flex;
   flex-direction: column;
@@ -421,7 +481,7 @@ h1 {
 }
 .testimonials .testimonial-quotes .noimg-info {
   position: relative;
-  border-bottom: 1px dotted #3bceac;
+  border-bottom: 1px dotted #17b5af;
 }
 .testimonials .testimonial-quotes .noimg-info::before {
   content: "“";
@@ -448,7 +508,7 @@ footer .links {
   text-transform: uppercase;
   font-size: 0.7rem;
   justify-content: space-evenly;
-  border-top: 1px solid #ffd6e5;
+  border-top: 1px solid #f9d2c7;
   padding-top: 0.5rem;
   padding-bottom: 3.5rem;
   transition: all 0.2s ease-in;
@@ -459,7 +519,7 @@ footer .links {
   }
 }
 footer .links a:hover {
-  color: #21836c;
+  color: #107975;
 }
 footer .social-bar {
   position: fixed;
@@ -475,10 +535,14 @@ footer .social-bar {
 }
 footer .social-bar i {
   cursor: pointer;
-  color: #ffd6e5;
+  color: #f9d2c7;
   font-size: 1.2rem;
   transition: all 0.2s ease-in-out;
 }
 footer .social-bar i:hover {
-  color: #ffafcc;
+  color: #f6b5a3;
+}
+
+.teaching-approach {
+  margin-top: 112px;
 }

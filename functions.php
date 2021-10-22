@@ -9,7 +9,25 @@ function bethyoga_features()
 }
 
 add_action('after_setup_theme', 'bethyoga_features');
+function pageBanner($args = NULL)
+{
+    if (!$args['title']) {
 
+        $args['title'] = get_the_title();
+    }
+
+?>
+    <div class="banner">
+        <h1><?php
+            echo $args['title'];
+            ?></h1>
+        <p><?php
+            echo $args['subtitle']
+            ?></p>
+    </div>
+<?php
+
+}
 
 function bethsinging_files()
 {

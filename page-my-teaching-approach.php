@@ -1,13 +1,17 @@
 <div class="flex-wrapper">
 
     <?php
-    get_header()
+    get_header();
+    pageBanner(array(
+        'photo' => 'http://bethmoran.localhost/wp-content/uploads/2021/10/colorful-organic-shapes-seamless-pattern-scaled.jpg'
+    ));
     ?>
-    <div class="container">
 
+    <div class="container teaching-approach">
         <?php
-        the_title()
-        ?></div>
+        the_content()
+        ?>
+    </div>
     <?php
     get_footer()
     ?>

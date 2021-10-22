@@ -1,15 +1,12 @@
 <div class="flex-wrapper">
     <?php
     get_header();
+    pageBanner(array(
+        'title' => 'Testimonials',
+        'subtitle' => 'Read what my talented students are saying about working with me.'
+    ));
     ?>
     <div class="container testimonials">
-
-        <div class="banner">
-            <h1>Testimonials</h1>
-            <p>Read what my talented students are saying about working with me.</p>
-        </div>
-
-
         <div class="testimonials-wrapper">
             <?php
 
