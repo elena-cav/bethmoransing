@@ -20,8 +20,8 @@
         <div class="front-page-content">
             <div class="introduction">
                 <?php
-                $homePage = get_post(13);
-                $featured_img_url = get_the_post_thumbnail_url(13, 'full');
+                $homePage = get_post(27);
+                $featured_img_url = get_the_post_thumbnail_url(27, 'full');
                 ?>
                 <div class="intro-wrapper">
                     <h1>Hi, I'm Beth</h1>
@@ -37,7 +37,7 @@
             </div>
             <div class="cards-container">
                 <div class="card yellow">
-                    <img src="http://bethmoran.localhost/wp-content/uploads/2021/10/8541685_couch_sofa_furniture_icon.svg
+                    <img src="https://www.bethmoran.co.uk/wp-content/uploads/2021/10/8541685_couch_sofa_furniture_icon.png
 " alt="">
                     <p>Find out about Couch Opera</p>
                     <button><a href="<?php
@@ -45,7 +45,7 @@
                                         ?>">Read more</a></button>
                 </div>
                 <div class="card green">
-                    <img src="http://bethmoran.localhost/wp-content/uploads/2021/10/7549098_user_interface_info_information_detail_icon.svg" alt="">
+                    <i class="fa fa-leanpub"></i>
                     <p>Learn about how I like to teach</p>
                     <button><a href="<?php
                                         echo site_url('/in-person-classes')
