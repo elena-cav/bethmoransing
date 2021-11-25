@@ -161,7 +161,7 @@ h1 {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #17b5af;
+  background-color: #df4216;
 }
 .site-header a:not(.logolink):before {
   opacity: 0;
@@ -195,7 +195,7 @@ h1 {
 }
 .site-header .container .logo h1 {
   margin: 0;
-  color: #107975;
+  color: #df4216;
 }
 .site-header .container .logo h1 p {
   font-size: 13px;
@@ -208,7 +208,7 @@ h1 {
 }
 .site-header .site-header__menu-trigger {
   cursor: pointer;
-  color: #107975;
+  color: #df4216;
   font-size: 1.2rem;
   z-index: 101;
   position: relative;
@@ -273,7 +273,7 @@ h1 {
   }
 }
 .site-header ul li {
-  color: #107975;
+  color: #df4216;
   text-transform: uppercase;
   list-style: none;
   font-size: 15px;
@@ -281,7 +281,7 @@ h1 {
   margin: 10px 0;
 }
 .site-header ul li a {
-  color: #107975;
+  color: #df4216;
 }
 @media (min-width: 960px) {
   .site-header ul li {
@@ -325,14 +325,15 @@ h1 {
 }
 .parallax-content button {
   text-transform: uppercase;
-  background-color: #107975;
+  background-color: #df4216;
   color: white;
   letter-spacing: 0.1rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   margin-bottom: 56px;
 }
 .parallax-content button:hover {
-  background-color: #17b5af;
+  background-color: #f6b5a3;
+  color: black;
 }
 
 .front-page-content .introduction {
@@ -406,31 +407,40 @@ h1 {
   text-transform: uppercase;
 }
 .front-page-content .cards-container .yellow {
-  background-color: #fcf6bd;
+  background-color: #f6b5a3;
 }
 .front-page-content .cards-container .yellow i {
   font-size: 3rem;
-  color: #191516;
+  color: black;
 }
 .front-page-content .cards-container .yellow button {
-  border: 2px solid #f6b5a3;
+  border: 2px solid #df4216;
 }
 .front-page-content .cards-container .yellow button:hover {
-  background-color: #f6b5a3;
+  background-color: #df4216;
+  color: white;
+}
+.front-page-content .cards-container .yellow button a:hover {
+  color: white;
 }
 .front-page-content .cards-container .green {
-  background-color: #ffe0b5;
-  color: black;
+  background-color: #df4216;
+  color: white;
 }
 .front-page-content .cards-container .green i {
   font-size: 3rem;
-  color: black;
+  color: white;
 }
 .front-page-content .cards-container .green button {
-  border: 2px solid #17b5af;
+  border: 2px solid #f6b5a3;
+  color: white;
 }
 .front-page-content .cards-container .green button:hover {
-  background-color: #17b5af;
+  background-color: #f6b5a3;
+  color: black;
+}
+.front-page-content .cards-container .green button a:hover {
+  color: black;
 }
 
 .testimonials {
@@ -518,7 +528,7 @@ footer .links {
   }
 }
 footer .links a:hover {
-  color: #107975;
+  color: #df4216;
 }
 footer .social-bar {
   position: fixed;

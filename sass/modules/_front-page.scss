@@ -17,14 +17,15 @@
 
   button {
     text-transform: uppercase;
-    background-color: $darkGreen;
+    background-color: $orange;
     color: white;
     letter-spacing: 0.1rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     margin-bottom: 56px;
 
     &:hover {
-      background-color: $green;
+      background-color: $pink;
+      color: black;
     }
   }
 }
@@ -75,7 +76,6 @@
     }
     .card {
       min-height: 190px;
-
       @media (min-width: 650px) {
         width: 33.33%;
       }
@@ -96,29 +96,38 @@
     }
 
     .yellow {
-      background-color: #fcf6bd;
-      i {
-        font-size: 3rem;
-        color: #191516;
-      }
-      button {
-        border: 2px solid $pink;
-        &:hover {
-          background-color: $pink;
-        }
-      }
-    }
-    .green {
-      background-color: #ffe0b5;
-      color: black;
+      background-color: $pink;
       i {
         font-size: 3rem;
         color: black;
       }
       button {
-        border: 2px solid $green;
+        border: 2px solid $orange;
         &:hover {
-          background-color: $green;
+          background-color: $orange;
+          color: white;
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+    .green {
+      background-color: $orange;
+      color: white;
+      i {
+        font-size: 3rem;
+        color: white;
+      }
+      button {
+        border: 2px solid $pink;
+        color: white;
+        &:hover {
+          background-color: $pink;
+          color: black;
+        }
+        a:hover {
+          color: black;
         }
       }
     }

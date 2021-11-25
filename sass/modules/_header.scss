@@ -7,13 +7,13 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     &:before,
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -2px;
       left: 0;
       right: 0;
       height: 2px;
-      background-color: $green;
+      background-color: $orange;
     }
     &:before {
       opacity: 0;
@@ -53,7 +53,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
       h1 {
         margin: 0;
-        color: $darkGreen;
+        color: $orange;
         p {
           font-size: 13px;
           margin: 0;
@@ -69,14 +69,14 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   .site-header__menu-trigger {
     cursor: pointer;
-    color: $darkGreen;
+    color: $orange;
     font-size: 1.2rem;
     z-index: 101;
     position: relative;
 
     &.fa-times {
       &::after {
-        content: "";
+        content: '';
         z-index: -1;
         background-color: $pink;
         position: absolute;
@@ -130,9 +130,9 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       margin: 0;
     }
     li {
-      color: $darkGreen;
+      color: $orange;
       a {
-        color: $darkGreen;
+        color: $orange;
       }
       text-transform: uppercase;
       list-style: none;
